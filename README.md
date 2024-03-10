@@ -46,7 +46,7 @@ The notebook provides insights into the model's predictions for 1000 molecules, 
 - [Ersilia GitHub Repository](https://github.com/ersilia-os/ersilia)
 - [Ersilia GitBook](https://ersilia.gitbook.io/ersilia-book)
 - [Model Publication](https://acrobat.adobe.com/id/urn:aaid:sc:ap:3cca2c36-6b4f-478a-996c-7f77423e819e)
-- [Model GitHub Repository)[https://github.com/ersilia-os/eos30gr]
+- [Model GitHub Repository](https://github.com/ersilia-os/eos30gr)
 - [Model Source Code](https://github.com/ChengF-Lab/deephERG)
 
 
