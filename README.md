@@ -14,9 +14,9 @@ This repository contains code and data related to the hERG blocker classificatio
 
 ## Tasks - Outreachy Contribution Period
 
-- [ ] T1 Model bias (i.e: models giving very high values or low values): to check that, we only need to run predictions for a list of 1000 diverse molecules in each model and plot the results in a scatter plot.
+- [x] T1 Model bias (i.e: models giving very high values or low values): to check that, we only need to run predictions for a list of 1000 diverse molecules in each model and plot the results in a scatter plot.
 
-- [ ] T2 Reproducibility: can we reproduce the exact values / a figure / that authors obtained when training the model in the first place? This means we need to read the publication and identify for example a compound identified using that model and check that we obtain the same values.
+- [x] T2 Reproducibility: can we reproduce the exact values / a figure / that authors obtained when training the model in the first place? This means we need to read the publication and identify for example a compound identified using that model and check that we obtain the same values.
 
 - [ ] T3 Performance: can we check if the model gives accurate results in external datasets? This is more time consuming and will be done by identifying a public dataset that has not been used in model training, and running predictions to build AUROC curves - to simplify reports, we will only focus on AUROC or R2 as metrics now.
 
@@ -57,8 +57,8 @@ ersilia -v api run -i data/input_task2.csv -o data/output_task2.csv
 ## About the Dataset
 
 - **For Task T1:** The model was run on the dataset downloaded from ChEMBL in TSV format which was preprocessed to meet the model's requirements. The downloaded dataset containing 8715 entries can be viewed from `data/raw_data.tsv`.
-- **For Task T2:** The model was run on the dataset used by the authors in their [publication](https://acrobat.adobe.com/id/urn:aaid:sc:ap:3cca2c36-6b4f-478a-996c-7f77423e819e?viewer%21megaVerb=group-discover). The dataset was downloaded from the [repository](https://github.com/ChengF-Lab/deephERG) made by the authors. The dataset can be viewed from `data/input_task2.csv`.
-- **For Task T3:** 
+- **For Task T2:** The model was run on the dataset used by the authors in their [publication](https://acrobat.adobe.com/id/urn:aaid:sc:ap:3cca2c36-6b4f-478a-996c-7f77423e819e?viewer%21megaVerb=group-discover). The dataset was downloaded from the [repository](https://github.com/ChengF-Lab/deephERG) made by the authors. The dataset can be viewed from `data/input_task2.csv`. It contains the detailed prediction results for 1,824 FDA-approved small molecule drugs available from the DrugBank database.
+- **For Task T3:** The model was run on the dataset used by Li et al in their [publication](https://acrobat.adobe.com/id/urn:aaid:sc:ap:01ce6a64-01b1-4369-a583-84e1c8da5015). The dataset can be downloaded using this [link](https://ochem.eu/login/show.do?render-mode=full). The dataset contains 1092 records in which 234 records are hERG blockers and the rest are non-blockers.
 
 _Note that all the input and output files used in the tasks are present in the `data` directory of this repository. If you wish to run the model on other inputs, follow [this guide](https://ersilia.gitbook.io/ersilia-book/ersilia-model-hub/inputs)_
 
